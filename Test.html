@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 9px 0px;
+    overflow: hidden;
+    width: 200px;
+    position: relative;
+}
+
+.discount {
+    background: #ff5252;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 6px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 4px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    padding: 10px;
+}
+
+.product-info h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.price {
+    color: #ff5252;
+    font-size: 14px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 12px;
+}
+
+.sizes span {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 5px;
+    padding: 2px 4px;
+    font-size: 12px;
+}
+
+.rating {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+}
+
+.buy-button {
+    background: #6200ea;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background: #3700b3;
+}
+    </style>
+</head>
+<body>
+    <div class="product-cards">
+        <div class="card">
+            <div class="discount">-25%</div>
+            <img src="long-dress.png" alt="White traditional long dress">
+            <div class="product-info">
+                <h3>White traditional long dress</h3>
+                <p class="price">$3.99 <span class="original-price">$5.99</span></p>
+                <div class="sizes">
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                </div>
+                <div class="rating">4.8</div>
+                <button class="buy-button">BUY +</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="discount">-25%</div>
+            <img src="Denim.png" alt="Long sleeve denim jacket">
+            <div class="product-info">
+                <h3>Long sleeve denim jacket</h3>
+                <p class="price">$3.99 <span class="original-price">$5.99</span></p>
+                <div class="sizes">
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                </div>
+                <div class="rating">4.8</div>
+                <button class="buy-button">BUY +</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="discount">-25%</div>
+            <img src="Shoes.png" alt="Shoes">
+            <div class="product-info">
+                <h3>Shoes</h3>
+                <p class="price">$3.99 <span class="original-price">$5.99</span></p>
+                <div class="sizes">
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                </div>
+                <div class="rating">3.8</div>
+                <button class="buy-button">BUY +</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
